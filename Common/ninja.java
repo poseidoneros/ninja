@@ -1,4 +1,4 @@
-package mods.ninja;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -26,7 +26,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 public class ninja 
 {
 
-@SidedProxy(clientSide = "mods.ninja.ClientProxyNinja", serverSide = "mods.ninja.CommonProxyNinja")
+@SidedProxy(clientSide = "ClientProxyNinja", serverSide = "CommonProxyNinja")
 	public static CommonProxyNinja proxy;
 	
 public static EnumToolMaterial Osmium = EnumHelper.addToolMaterial("Osmium", 4, 20000, 11.0F, 6 , 10);

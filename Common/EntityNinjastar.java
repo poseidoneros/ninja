@@ -1,4 +1,4 @@
-package mods.ninja;
+
 
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.projectile.EntityThrowable;

@@ -1,6 +1,5 @@
-package mods.ninja;
 
-import net.minecraft.client.renderer.texture.IconRegister;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -15,10 +14,9 @@ public class ItemNinjastar extends Item
 		this.setCreativeTab(CreativeTabs.tabCombat);
 		
 	}
-	@Override
-	public void func_94581_a(IconRegister reg){
-		this.iconIndex = reg.func_94245_a("ninja:ninjastarf");
-	}
+	
+	
+	
 	public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
 	{
 		if (!par3EntityPlayer.capabilities.isCreativeMode)

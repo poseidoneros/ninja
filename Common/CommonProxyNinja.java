@@ -1,4 +1,4 @@
-package mods.ninja;
+
 
 public class CommonProxyNinja 
 {
