@@ -1,4 +1,4 @@
-
+package mods.ninja;
 
 import java.util.Random;
 
@@ -31,12 +31,20 @@ public class WorldGeneratorNinja implements IWorldGenerator
 
 	private void generateSurface(World world, Random random, int chunkX,
 			int chunkZ) {
-		for(int i = 0; i < 15; i++){
+		for(int i = 0; i < 8; i++){
 			int xcoord = chunkX + random.nextInt(16);
 			int ycoord = random.nextInt(20);
 			int zcoord = chunkZ + random.nextInt(16);
 			
 			(new WorldGenMinable(ninja.OsmiumOre.blockID, 5)).generate(world, random, xcoord, ycoord, zcoord);
+		}
+		
+		for(int i = 0; i < 15; i++){
+			int x = chunkX + random.nextInt(16);
+			int y = random.nextInt(46);
+			int z = chunkZ + random.nextInt(16);
+			
+			(new WorldGenMinable(ninja.GlowCrystalOre.blockID, 10)).generate(world, random, x, y, z);
 		}
 		
 	}

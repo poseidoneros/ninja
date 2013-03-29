@@ -1,4 +1,4 @@
-
+package mods.ninja;
 
 import java.util.Random;
 
@@ -9,10 +9,11 @@ import net.minecraft.creativetab.CreativeTabs;
 public class BlockOsmiumOre extends Block
 {
 
-	public BlockOsmiumOre(int id, int texture, Material mat) 
+	public BlockOsmiumOre(int id, Material mat) 
 	{
-		super(id, texture, mat);
+		super(id, mat);
 		this.setCreativeTab(CreativeTabs.tabBlock);
+		
 	}
 
 	
